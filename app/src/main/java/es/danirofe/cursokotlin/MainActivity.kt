@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("daniel", "La actividad se ha creado")
     }
 
+
     override fun onResume() {
         super.onResume()
         Log.d("daniel", "La actividad entra en el estado visible")
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.d("daniel", "La actividad ha entrado en estado foreGround")
+
     }
 
     override fun onDestroy() {
