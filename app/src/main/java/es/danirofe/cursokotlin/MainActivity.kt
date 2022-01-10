@@ -1,6 +1,7 @@
 package es.danirofe.cursokotlin
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import es.danirofe.cursokotlin.databinding.ActivityMainBinding
@@ -13,16 +14,18 @@ class MainActivity : AppCompatActivity() {
     lateinit var log: CursoKotlinLog
     private lateinit var binding: ActivityMainBinding
 
+    private val viewModel: MainViewModel by viewModels()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         log.log("La actividad se ha creado")
 
-        binding.title.text = it.
-
-
+        binding.title.text = resources.getString(R.string.alquilarbtn)
     }
+
 
 
     override fun onResume() {

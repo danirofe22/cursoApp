@@ -99,7 +99,7 @@
         android:contentDescription="TODO" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/dirFecha"
         android:layout_width="186dp"
         android:layout_height="35dp"
         android:fontFamily="@font/roboto"
