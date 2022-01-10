@@ -20,10 +20,6 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-r
-Bapp/src/main/java/es/danirofe/cursokotlin/CursoKotlinAplication.kt,6\7\67733e60c7595d12bb3305ea33684ddceb299adc
 f
 6data/src/test/java/es/danirofe/data/ExampleUnitTest.kt,7\e\7ec92236209bc2efd7b66dfc73c3e6a0c085b819
 A

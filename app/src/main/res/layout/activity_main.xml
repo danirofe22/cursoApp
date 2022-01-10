@@ -13,7 +13,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comprar"
+        android:text="@string/comprarBtn"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.19"
@@ -24,7 +24,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alquilar"
+        android:text="@string/alquilarbtn"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
@@ -53,7 +53,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
-        app:srcCompat="@drawable/opcion" />
+        app:srcCompat="@drawable/opcion"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -65,15 +66,16 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/volver" />
+        app:srcCompat="@drawable/volver"
+        android:contentDescription="TODO" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="93dp"
         android:fontFamily="@font/roboto"
         android:foregroundTint="#7C7C7C"
-        android:text="Batman y \nRobin"
+        tools:text="Batman y \nRobin"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -93,7 +95,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:srcCompat="@drawable/treiler" />
+        app:srcCompat="@drawable/treiler"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView3"
@@ -101,7 +104,8 @@
         android:layout_height="35dp"
         android:fontFamily="@font/roboto"
         android:foregroundTint="#272727"
-        android:text="1997 \nDirector: Joel Schumacher"
+        android:text="@string/fechaYDirector"
+        android:textColor="#616161"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintDimensionRatio="w,2:1"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -123,7 +127,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:layout_constraintVertical_bias="0.77"
-        app:srcCompat="@drawable/batmanpeli" />
+        app:srcCompat="@drawable/batmanpeli"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -138,7 +143,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/guardarinstagram" />
+        app:srcCompat="@drawable/guardarinstagram"
+        android:contentDescription="TODO" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -167,7 +173,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/atras" />
+        app:srcCompat="@drawable/atras"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -182,7 +189,8 @@
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.419"
-        app:srcCompat="@drawable/lupa1" />
+        app:srcCompat="@drawable/lupa1"
+        android:contentDescription="TODO" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -200,7 +208,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -211,7 +221,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -222,7 +234,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -233,7 +247,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="@+id/imageView9"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -244,6 +260,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:srcCompat="@android:drawable/btn_star" />
+        app:srcCompat="@android:drawable/btn_star"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
