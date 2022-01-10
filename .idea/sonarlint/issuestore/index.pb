@@ -2,8 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-?
-settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 X
@@ -20,3 +18,23 @@ l
 <app/src/test/java/es/danirofe/cursokotlin/ExampleUnitTest.kt,a\c\ac28dd5141416e25ba124eb229f0e2945bce67fd
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+r
+Bapp/src/main/java/es/danirofe/cursokotlin/CursoKotlinAplication.kt,6\7\67733e60c7595d12bb3305ea33684ddceb299adc
+f
+6data/src/test/java/es/danirofe/data/ExampleUnitTest.kt,7\e\7ec92236209bc2efd7b66dfc73c3e6a0c085b819
+A
+domain/.gitignore,f\0\f0beecb3fabf37dd9436f6a769abf826f97eba92
+G
+data/consumer-rules.pro,8\d\8d6a93142d516457e992dc51471f06dffd872e84
+G
+data/proguard-rules.pro,0\f\0fbb6d729d2f1271751b1eee2d01927256945f01
+?
+data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
+Q
+!data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
+A
+data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
