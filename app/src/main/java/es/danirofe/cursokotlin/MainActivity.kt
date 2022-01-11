@@ -21,9 +21,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        log.log("La actividad se ha creado")
+        viewModel.loadFilm()
+        viewModel.film.observe(this){
+            binding.title.text = it.title
+            binding.dirFecha.text = it.nameDir
 
-        binding.title.text = resources.getString(R.string.alquilarbtn)
+        }
+
+        binding.button.text= resources.getString(R.string.comprarBtn)
+        binding.button2.text = resources.getString(R.string.alquilarbtn)
+
+
     }
 
 
