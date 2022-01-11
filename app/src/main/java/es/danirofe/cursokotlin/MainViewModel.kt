@@ -18,7 +18,8 @@ class MainViewModel@Inject constructor(
     val film: LiveData<FilmDataView> = filmLiveData
 
     fun loadFilm(){
-        filmLiveData.value = FilmDataView(loadedFilm().title)
+        val loadedFilm = useCase.run()
+        filmLiveData.value = FilmDataView(loadedFilm.title, loadedFilm.nameDir)
     }
 
     data class FilmDataView(val title: String, val nameDir: String)
