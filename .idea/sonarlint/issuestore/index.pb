@@ -32,8 +32,6 @@ G
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
 Q
 !data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
-A
-data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
 u
 Edata/src/androidTest/java/es/danirofe/data/ExampleInstrumentedTest.kt,f\8\f8df665e36157aeb933a3ce2efb34e3e3fa1d303
 i
