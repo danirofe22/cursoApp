@@ -4,5 +4,7 @@ data class Film (
     val title: String,
     val url:String,
     val rating: Float,
-    val nameDir: String)
+    val nameDir: String?,
+    val description: String
+)
 
