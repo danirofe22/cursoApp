@@ -48,3 +48,7 @@ C
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 i
 9data/src/main/java/es/danirofe/data/FilmRepositoryImpl.kt,9\1\91d16bf1edccf381cb5cdad2e46e729967500ce8
+f
+6app/src/main/java/es/danirofe/cursokotlin/AppModule.kt,5\7\5798e08df7f08672a9b37086f3a28de4916fc916
+a
+1data/src/main/java/es/danirofe/data/DataModule.kt,e\7\e79cea35ff7f61d3dfbfae77fa26209498190331
