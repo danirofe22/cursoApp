@@ -20,7 +20,6 @@ class ServerDataSource @Inject constructor() {
         val image  ="https://image.tmdb.org/t/p/w500${filmDto.imageUrl}"
         val rating  = filmDto.rating.toFloat()
         val description = filmDto.description
-
         return Film(title ,image, rating, director, description)
     }
 }
