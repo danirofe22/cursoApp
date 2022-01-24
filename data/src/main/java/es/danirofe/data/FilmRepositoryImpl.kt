@@ -6,9 +6,11 @@ import javax.inject.Inject
 import javax.sql.DataSource
 
 class FilmRepositoryImpl @Inject constructor(
-    private val dataSource:HarcodedDataSource
+    private val dataSource:ServerDataSource
     ): FilmRepository {
-        override fun  getFilm(): Film{
-            return dataSource.getFilm()
-        }
+    override suspend fun getFilm(id: Int, language: String): Film? {
+        return runCatching {
+            dataSource.getFilm(id, language)
+        }.getOrNull()
     }
+}

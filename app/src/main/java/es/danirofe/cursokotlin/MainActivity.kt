@@ -3,6 +3,7 @@ package es.danirofe.cursokotlin
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import dagger.hilt.android.AndroidEntryPoint
 import es.danirofe.cursokotlin.databinding.ActivityMainBinding
 import javax.inject.Inject
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.film.observe(this){
             binding.title.text = it.title
             binding.dirFecha.text = it.nameDir
+            Glide.with(this).load(it.imageUrl).into(binding.poster)
 
         }
 
