@@ -24,6 +24,7 @@ class FilmListActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
         }
 
     }
