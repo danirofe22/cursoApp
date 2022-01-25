@@ -30,25 +30,15 @@ G
 data/proguard-rules.pro,0\f\0fbb6d729d2f1271751b1eee2d01927256945f01
 ?
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
-Q
-!data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
 u
 Edata/src/androidTest/java/es/danirofe/data/ExampleInstrumentedTest.kt,f\8\f8df665e36157aeb933a3ce2efb34e3e3fa1d303
 C
 domain/build.gradle,a\3\a3021bb5ba623a461b5fdb89ae51923a4945c354
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 A
 data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
-i
-9data/src/main/java/es/danirofe/data/HarcodedDataSource.kt,6\d\6de462b6b21588321051ccc251161efaf2fc4d48
-j
-:app/src/main/java/es/danirofe/cursokotlin/MainViewModel.kt,e\d\ed85c10a5d80dab355e5d3fe6bc3b9801667c6cb
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-i
-9app/src/main/java/es/danirofe/cursokotlin/MainActivity.kt,0\8\0833b7d3caa73d3c8f10912af6de030c78fc475c
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
