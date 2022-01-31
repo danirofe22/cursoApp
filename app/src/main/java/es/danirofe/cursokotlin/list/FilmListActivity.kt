@@ -12,8 +12,11 @@ import javax.inject.Inject
 class FilmListActivity : AppCompatActivity() {
 
     @Inject
+    lateinit var adapter: FilmListAdapter
 
+    @Inject
     private lateinit var binding: FilmListBinding
+
 
     private val viewModel: FilmListViewModel by viewModels()
 
@@ -23,6 +26,7 @@ class FilmListActivity : AppCompatActivity() {
         binding = FilmListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.root.adapter = adapter
 
 
         }
@@ -30,4 +34,3 @@ class FilmListActivity : AppCompatActivity() {
     }
 
 
-}

@@ -2,10 +2,6 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-A
-gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-X
-(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 7
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
@@ -32,20 +28,8 @@ G
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
 u
 Edata/src/androidTest/java/es/danirofe/data/ExampleInstrumentedTest.kt,f\8\f8df665e36157aeb933a3ce2efb34e3e3fa1d303
-C
-domain/build.gradle,a\3\a3021bb5ba623a461b5fdb89ae51923a4945c354
-?
-settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-A
-data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 a
 1data/src/main/java/es/danirofe/data/DataModule.kt,e\7\e79cea35ff7f61d3dfbfae77fa26209498190331
-e
-5data/src/main/java/es/danirofe/data/FilmApiService.kt,c\5\c56eaaf0aaacdaae5e52e3378dd9518d5ed05934
 i
 9data/src/main/java/es/danirofe/data/HarcodedDataSource.kt,6\d\6de462b6b21588321051ccc251161efaf2fc4d48
 Q
@@ -62,17 +46,7 @@ a
 .data/src/main/java/es/danirofe/data/CastDto.kt,0\6\063fa93d3b62dcbf1be03d9a2398644c9201dee5
 ^
 .data/src/main/java/es/danirofe/data/FilmDto.kt,b\a\ba93a58774628c506c7788256b60bc6c64f8319f
-z
-Jdomain/src/main/java/es/danirofe/domain/model/repository/getFilmUseCase.kt,5\0\50d00907322d4928460ac3c23db4b3c8e005e6c0
-{
-Kdomain/src/main/java/es/danirofe/domain/model/repository/GetFilmsUseCase.kt,6\c\6c58c3daac7009beb74a19e77e75d5917c4b6192
 v
 Fdomain/src/main/java/es/danirofe/domain/model/repository/repository.kt,5\1\51fd589d8baad9c2dfa0694830364b9ea48b98b5
-i
-9data/src/main/java/es/danirofe/data/FilmRepositoryImpl.kt,9\1\91d16bf1edccf381cb5cdad2e46e729967500ce8
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-j
-:app/src/main/java/es/danirofe/cursokotlin/MainViewModel.kt,e\d\ed85c10a5d80dab355e5d3fe6bc3b9801667c6cb
-i
-9app/src/main/java/es/danirofe/cursokotlin/MainActivity.kt,0\8\0833b7d3caa73d3c8f10912af6de030c78fc475c
+s
+Capp/src/main/java/es/danirofe/cursokotlin/list/FilmListViewModel.kt,5\6\567b45444379f1fced38a7f51567c8d656b786b6

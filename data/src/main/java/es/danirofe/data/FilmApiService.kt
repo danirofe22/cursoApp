@@ -24,6 +24,18 @@ interface FilmApiService {
     suspend fun getFilms(
                         @Query("language")lang:String,
                         @Query("api_key")apiKey:String= API_KEY):FilmsDto
+/*
+    @GET("movie/popular")
+    suspend fun getFilms(
+        @Query("language")lang:String,
+        @Query("api_key")apiKey:String= API_KEY):FilmsDto
+
+    @GET("movie/popular")
+    suspend fun getFilms(
+        @Query("language")lang:String,
+        @Query("api_key")apiKey:String= API_KEY):FilmsDto
+
+ */
 }
 
 
