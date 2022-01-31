@@ -22,14 +22,15 @@ class ServerDataSource @Inject constructor() {
         val image  ="https://image.tmdb.org/t/p/w500${filmDto.imageUrl}"
         val rating  = filmDto.rating
         val description = filmDto.description
+        val id = filmDto.id
 
-        return Film(title ,image, rating, director, description)
+        return Film(title ,image, rating, director, description,id)
     }
 
     suspend fun getFilms(language:String):List<Film>{
 
         return api.getFilms(language).filmList.map {
-            Film(it.title, "https://image.tmdb.org/t/p/w500${it.imageUrl}", it.rating, null, it.description )
+            Film(it.title, "https://image.tmdb.org/t/p/w500${it.imageUrl}", it.rating, null, it.description, it.id )
 
         }
     }

@@ -5,6 +5,7 @@ data class Film (
     val url:String,
     val rating: Float,
     val nameDir: String?,
-    val description: String
+    val description: String,
+    val id: Int
 )
 

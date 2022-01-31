@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
+import es.danirofe.cursokotlin.list.FilmOverViewDataView
 import es.danirofe.domain.model.repository.Film
 import es.danirofe.domain.model.repository.GetFilmUseCase
 import es.danirofe.domain.model.repository.GetFilmsUseCase
@@ -17,13 +18,10 @@ class FilmListViewModel@Inject constructor(
     private val useCase: GetFilmsUseCase
 ): ViewModel(), LifecycleObserver {
 
-    private val filmListLiveData = MutableLiveData<FilmListDataView>()
-    val films: LiveData<FilmListDataView> = filmListLiveData
+    private val filmListLiveData = MutableLiveData<List<FilmOverViewDataView>>()
+    val films: LiveData<List<FilmOverViewDataView>> = filmListLiveData
 
     var job : Job? = null
-
-
-
 
     fun loadFilms() {
         val language = Locale.getDefault().language
@@ -31,9 +29,8 @@ class FilmListViewModel@Inject constructor(
             val loadedFilmList = useCase.run(language)
             withContext(Dispatchers.Main){
                 loadedFilmList?.let {
-                    filmListLiveData.value = FilmListDataView(
-                        it
-                    )
+                    filmListLiveData.value = it.map {film-> FilmOverViewDataView(film.id, film.title, film.url)}
+
                 }
             }
         }
@@ -46,7 +43,7 @@ class FilmListViewModel@Inject constructor(
 }
 
 
-data class FilmListDataView(val films: List<Film>?)
+
 
 
 
