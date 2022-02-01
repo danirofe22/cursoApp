@@ -9,7 +9,7 @@ import es.danirofe.cursokotlin.databinding.ActivityMainBinding
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class FilmActivity : AppCompatActivity() {
 
     @Inject
     lateinit var log: CursoKotlinLog
