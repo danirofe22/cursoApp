@@ -9,6 +9,8 @@ import javax.inject.Inject
 import androidx.recyclerview.widget.ListAdapter
 import com.bumptech.glide.Glide
 
+typealias OnMessageClick = (FilmOverViewDataView) -> Unit
+
 open class FilmViewHolder(val binding:FilmOverviewBinding): RecyclerView.ViewHolder(binding.root)
 
 
@@ -32,6 +34,8 @@ class FilmListAdapter @Inject constructor(): ListAdapter<FilmOverViewDataView, F
         }
     }
 
+    var callback: OnMessageClick? =null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)=
         object:FilmViewHolder(FilmOverviewBinding.inflate(
             LayoutInflater.from(parent.context),
@@ -43,5 +47,9 @@ class FilmListAdapter @Inject constructor(): ListAdapter<FilmOverViewDataView, F
         val film = getItem(position)
         holder.binding.info.text =film.title
         Glide.with(holder.binding.imageInfo).load(film.imageUrl).into(holder.binding.imageInfo)
+        holder.binding.root.setOnClickListener {
+            callback?.invoke(film)
+        }
+
     }
 }

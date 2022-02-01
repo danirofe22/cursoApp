@@ -1,6 +1,7 @@
 package es.danirofe.cursokotlin.list
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -29,6 +30,11 @@ class FilmListActivity : AppCompatActivity() {
         viewModel.films.observe(this){
             adapter.submitList(it)
         }
+        adapter.callback = {
+            //Log.i("onclick", "${it.title}")
+
+        }
+
         }
 
     }
