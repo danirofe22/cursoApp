@@ -14,12 +14,9 @@ class FilmListActivity : AppCompatActivity() {
     @Inject
     lateinit var adapter: FilmListAdapter
 
-    @Inject
     private lateinit var binding: FilmListBinding
 
-
     private val viewModel: FilmListViewModel by viewModels()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
