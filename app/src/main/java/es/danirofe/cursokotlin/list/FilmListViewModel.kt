@@ -6,8 +6,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import es.danirofe.cursokotlin.list.FilmOverViewDataView
-import es.danirofe.domain.model.repository.Film
-import es.danirofe.domain.model.repository.GetFilmUseCase
 import es.danirofe.domain.model.repository.GetFilmsUseCase
 import kotlinx.coroutines.*
 import java.util.*

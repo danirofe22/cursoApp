@@ -1,15 +1,22 @@
-package es.danirofe.cursokotlin
+package es.danirofe.cursokotlin.film
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import dagger.hilt.android.AndroidEntryPoint
+import es.danirofe.cursokotlin.CursoKotlinLog
+import es.danirofe.cursokotlin.MainViewModel
+import es.danirofe.cursokotlin.R
 import es.danirofe.cursokotlin.databinding.ActivityMainBinding
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class FilmActivity : AppCompatActivity() {
+
+    companion object {
+        const val FILM_ID = "ID"
+    }
 
     @Inject
     lateinit var log: CursoKotlinLog
@@ -22,10 +29,18 @@ class FilmActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel.loadFilm()
+
+        val id = intent?.extras?.getInt(FILM_ID)?:600
+
+
+        viewModel.loadFilm(id)
         viewModel.film.observe(this){
+
+            title = it.title
             binding.title.text = it.title
             binding.dirFecha.text = it.nameDir
+            binding.ratingBar.rating = it.rating.toFloat()
+            binding.description.text = it.description
             Glide.with(this).load(it.imageUrl).into(binding.poster)
 
         }

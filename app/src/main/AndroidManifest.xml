@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name=".FilmActivity"
+            android:name=".film.FilmActivity"
             android:exported="true">
 
         </activity>

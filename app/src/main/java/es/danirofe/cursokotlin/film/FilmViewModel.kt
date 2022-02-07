@@ -5,7 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import es.danirofe.domain.model.repository.Film
 import es.danirofe.domain.model.repository.GetFilmUseCase
 import kotlinx.coroutines.*
 import java.util.*
@@ -24,16 +23,19 @@ class MainViewModel@Inject constructor(
 
 
 
-    fun loadFilm() {
+    fun loadFilm(id: Int) {
         val language = Locale.getDefault().language
         job = CoroutineScope(Dispatchers.IO).launch{
-            val loadedFilm = useCase.run(600, language )
+            val loadedFilm = useCase.run(id, language )
             withContext(Dispatchers.Main){
                 loadedFilm?.let {
                     filmLiveData.value = FilmDataView(
+
                         it.title,
                         it.nameDir,
-                        it.url
+                        it.url,
+                        it.rating,
+                        it.description
                     )
 
                 }
@@ -48,7 +50,7 @@ class MainViewModel@Inject constructor(
         job?.cancel()
     }
 }
-data class FilmDataView(val title: String, val nameDir: String?, val imageUrl:String?)
+data class FilmDataView(val title: String, val nameDir: String?, val imageUrl:String?, val rating:Float, val description:String)
 
 
 
