@@ -39,7 +39,7 @@ class FilmActivity : AppCompatActivity() {
             title = it.title
             binding.title.text = it.title
             binding.dirFecha.text = it.nameDir
-            binding.ratingBar.rating = it.rating.toFloat()
+            binding.ratingBar.rating = it.rating
             binding.description.text = it.description
             Glide.with(this).load(it.imageUrl).into(binding.poster)
 

@@ -36,6 +36,11 @@ interface FilmApiService {
         @Query("api_key")apiKey:String= API_KEY):FilmsDto
 
  */
+
+    @GET("movie/{id}/videos")
+    suspend fun getVideos(@Path("id")filmId:Int,
+                          @Query("language")lang:String,
+                          @Query("api_key")apiKey:String= API_KEY):VideosResultDto
 }
 
 

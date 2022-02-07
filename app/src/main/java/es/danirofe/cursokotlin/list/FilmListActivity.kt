@@ -33,9 +33,9 @@ class FilmListActivity : AppCompatActivity() {
         }
         adapter.callback = {
             //Log.i("onclick", "${it.title}")
-            startActivity(Intent(this, FilmActivity::class.java)).apply {
-                intent.putExtra(FilmActivity.FILM_ID, it.id)
-            }
+            startActivity(Intent(this, FilmActivity::class.java).apply {
+                putExtra(FilmActivity.FILM_ID, it.id)
+            })
 
         }
 
