@@ -21,10 +21,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/verTrailer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/alquilarbtn"
+        android:text="@string/verTrailer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toEndOf="@+id/button"

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">cursokotlin</string>
     <string name="texto1">Hola mono</string>
-    <string name="comprarBtn">Comprar</string>
+    <string name="comprarBtn">Shop</string>
     <string name="fechaYDirector">1997 \nDirector: Joel Schumacher</string>
-    <string name="alquilarbtn">Alquilar</string>
-    <string name="todo">TODO</string>
+    <string name="verTrailer">Watch Trailer</string>
+
 </resources>

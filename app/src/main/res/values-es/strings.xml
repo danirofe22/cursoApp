@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="texto1">Hola mono</string>
+    <string name="verTrailer">Ver Trailer</string>
+    <string name="comprarBtn">Comprar</string>
 </resources>

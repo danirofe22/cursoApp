@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 class HarcodedDataSource @Inject constructor(){
     fun getFilm(): Film{
-        return Film("Batman", "", 8.8f, "pepe", "description" , 0)
+        return Film("Batman", "", 8.8f, "pepe", "description" , 0, "0")
 
     }
 }

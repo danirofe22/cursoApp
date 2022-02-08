@@ -1,6 +1,9 @@
 package es.danirofe.cursokotlin.film
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -43,15 +46,26 @@ class FilmActivity : AppCompatActivity() {
             binding.description.text = it.description
             Glide.with(this).load(it.imageUrl).into(binding.poster)
 
+
+
+            binding.verTrailer.text = resources.getString(R.string.verTrailer)
+
+            if(it.video == null){
+                binding.verTrailer.visibility = View.GONE
+            }else{
+                binding.verTrailer.visibility = View.VISIBLE
+                binding.verTrailer.setOnClickListener { _->
+                    launchYouTube(it.video)
+                }
+            }
         }
-
-        binding.button.text= resources.getString(R.string.comprarBtn)
-        binding.button2.text = resources.getString(R.string.alquilarbtn)
-
-
+        actionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-
+    private fun launchYouTube(id:String){
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("www.youtube.com/watch?v=$id"))
+        startActivity(intent)
+    }
 
     override fun onResume() {
         super.onResume()
