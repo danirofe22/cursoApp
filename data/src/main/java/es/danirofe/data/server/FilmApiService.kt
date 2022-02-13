@@ -1,4 +1,4 @@
-package es.danirofe.data
+package es.danirofe.data.server
 
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -18,7 +18,7 @@ interface FilmApiService {
     @GET("movie/{id}/credits")
     suspend fun getCredits(@Path("id")filmId:Int,
                            @Query("language")lang:String,
-                        @Query("api_key")apiKey:String= API_KEY):CreditsDto
+                        @Query("api_key")apiKey:String= API_KEY): CreditsDto
 
     @GET("movie/popular")
     suspend fun getFilms(
@@ -40,7 +40,7 @@ interface FilmApiService {
     @GET("movie/{id}/videos")
     suspend fun getVideos(@Path("id")filmId:Int,
                           @Query("language")lang:String,
-                          @Query("api_key")apiKey:String= API_KEY):VideosResultDto
+                          @Query("api_key")apiKey:String= API_KEY): VideosResultDto
 }
 
 

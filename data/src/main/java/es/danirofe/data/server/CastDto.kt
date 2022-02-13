@@ -1,4 +1,4 @@
-package es.danirofe.data
+package es.danirofe.data.server
 
 import com.google.gson.annotations.SerializedName
 

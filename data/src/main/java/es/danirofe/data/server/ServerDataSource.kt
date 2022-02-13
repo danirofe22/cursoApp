@@ -1,4 +1,4 @@
-package es.danirofe.data
+package es.danirofe.data.server
 
 import es.danirofe.domain.model.repository.Film
 import retrofit2.Retrofit
