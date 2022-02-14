@@ -12,7 +12,27 @@
         android:supportsRtl="true"
         android:name=".CursoKotlinAplication"
         android:theme="@style/Theme.Cursokotlin">
+
         <activity android:name=".list.FilmListActivity"
+            android:exported="true">
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+
+        <activity
+            android:name=".film.FilmActivity"
+            android:exported="true">
+            <meta-data
+                android:name = "android.support.PARENT_ACTIVITY"
+                android:value=".list.FilmListActivity">
+            </meta-data>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,20 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".film.FilmActivity"
-            android:exported="true">
-
-            <meta-data
-                android:name = "android.support.PARENT_ACTIVITY"
-                android:value=".list.FilmListActivity">
-            </meta-data>
-
-        </activity>
-
-        <activity android:name=".MainActivity" android:exported="true"/>
-
 
         <meta-data
             android:name="preloaded_fonts"

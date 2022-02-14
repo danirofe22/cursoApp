@@ -8,8 +8,6 @@
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-{
-Kapp/src/androidTest/java/es/danirofe/cursokotlin/ExampleInstrumentedTest.kt,9\b\9bb780d82ac88d967203ba4bf3e1e8027f84e150
 l
 <app/src/test/java/es/danirofe/cursokotlin/ExampleUnitTest.kt,a\c\ac28dd5141416e25ba124eb229f0e2945bce67fd
 F
@@ -46,13 +44,5 @@ C
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-q
-Aapp/src/main/java/es/danirofe/cursokotlin/list/FilmListAdapter.kt,5\e\5e19ba8b95f67b189408687c0436d81ba30815e3
-s
-Capp/src/main/java/es/danirofe/cursokotlin/list/FilmListViewModel.kt,5\6\567b45444379f1fced38a7f51567c8d656b786b6
-v
-Fapp/src/main/java/es/danirofe/cursokotlin/list/FilmOverViewDataView.kt,c\a\ca92dd430e8cf1dcb3e4769ccc3c9b6b25fad014
-k
-;app/src/main/java/es/danirofe/cursokotlin/CursoKotlinLog.kt,f\c\fce1c8b76b1ebfce31510c34909be2e8c9a6785b
 i
 9data/src/main/java/es/danirofe/data/HarcodedDataSource.kt,6\d\6de462b6b21588321051ccc251161efaf2fc4d48

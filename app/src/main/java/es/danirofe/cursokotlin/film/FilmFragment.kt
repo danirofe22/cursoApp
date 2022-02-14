@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import dagger.hilt.android.AndroidEntryPoint
-import es.danirofe.cursokotlin.CursoKotlinLog
 import es.danirofe.cursokotlin.MainViewModel
 import es.danirofe.cursokotlin.R
 import es.danirofe.cursokotlin.databinding.ActivityMainBinding
@@ -25,7 +24,6 @@ class FilmFragment: Fragment() {
     }
 
     @Inject
-    lateinit var log: CursoKotlinLog
     private lateinit var binding: ActivityMainBinding
 
     private val viewModel: MainViewModel by viewModels()

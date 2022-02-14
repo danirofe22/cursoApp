@@ -5,13 +5,15 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
+import es.danirofe.cursokotlin.FilmLauncher
+import es.danirofe.cursokotlin.R
 import es.danirofe.cursokotlin.film.FilmActivity
-import es.danirofe.cursokotlin.FilmListViewModel
 import es.danirofe.cursokotlin.databinding.FilmListBinding
+import es.danirofe.cursokotlin.film.FilmFragment
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class FilmListActivity : AppCompatActivity() {
+class FilmListActivity : AppCompatActivity(), FilmLauncher {
 
     @Inject
     lateinit var adapter: FilmListAdapter
@@ -36,11 +38,20 @@ class FilmListActivity : AppCompatActivity() {
             startActivity(Intent(this, FilmActivity::class.java).apply {
                 putExtra(FilmActivity.FILM_ID, it.id)
             })
-
         }
-
-        }
-
     }
+
+    override fun openDetails(id: Int) {
+        val fragment = FilmFragment()
+        fragment.arguments = Bundle().apply{
+            putInt(FilmFragment.FILM_ID, id)
+        }
+        supportFragmentManager.beginTransaction()
+            .add(R.id.list, fragment)
+            .addToBackStack("BACKSTACK")
+            .commit()
+    }
+
+}
 
 
