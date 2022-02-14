@@ -24,12 +24,16 @@
         <activity
             android:name=".film.FilmActivity"
             android:exported="true">
+
             <meta-data
                 android:name = "android.support.PARENT_ACTIVITY"
                 android:value=".list.FilmListActivity">
             </meta-data>
 
         </activity>
+
+        <activity android:name=".MainActivity" android:exported="true"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

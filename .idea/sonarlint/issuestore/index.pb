@@ -46,23 +46,13 @@ C
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 q
 Aapp/src/main/java/es/danirofe/cursokotlin/list/FilmListAdapter.kt,5\e\5e19ba8b95f67b189408687c0436d81ba30815e3
-r
-Bapp/src/main/java/es/danirofe/cursokotlin/CursoKotlinAplication.kt,6\7\67733e60c7595d12bb3305ea33684ddceb299adc
-f
-6app/src/main/java/es/danirofe/cursokotlin/AppModule.kt,5\7\5798e08df7f08672a9b37086f3a28de4916fc916
 s
 Capp/src/main/java/es/danirofe/cursokotlin/list/FilmListViewModel.kt,5\6\567b45444379f1fced38a7f51567c8d656b786b6
 v
 Fapp/src/main/java/es/danirofe/cursokotlin/list/FilmOverViewDataView.kt,c\a\ca92dd430e8cf1dcb3e4769ccc3c9b6b25fad014
 k
 ;app/src/main/java/es/danirofe/cursokotlin/CursoKotlinLog.kt,f\c\fce1c8b76b1ebfce31510c34909be2e8c9a6785b
-r
-Bapp/src/main/java/es/danirofe/cursokotlin/list/FilmListActivity.kt,1\3\136cabd9a59be99f3fe5204264b535db68a3a020
-o
-?app/src/main/java/es/danirofe/cursokotlin/film/FilmViewModel.kt,7\8\7814692319f7766d482bd61adadb756a93867cb4
 i
 9data/src/main/java/es/danirofe/data/HarcodedDataSource.kt,6\d\6de462b6b21588321051ccc251161efaf2fc4d48
