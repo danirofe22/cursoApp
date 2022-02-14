@@ -1,5 +1,7 @@
 package es.danirofe.data.server
 
+import es.danirofe.data.database.AppDatabase
+import es.danirofe.data.database.FilmEntity
 import es.danirofe.domain.model.repository.Film
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
