@@ -42,14 +42,7 @@ class FilmListActivity : AppCompatActivity(), FilmLauncher {
     }
 
     override fun openDetails(id: Int) {
-        val fragment = FilmFragment()
-        fragment.arguments = Bundle().apply{
-            putInt(FilmFragment.FILM_ID, id)
-        }
-        supportFragmentManager.beginTransaction()
-            .add(R.id.list, fragment)
-            .addToBackStack("BACKSTACK")
-            .commit()
+        TODO("Not yet implemented")
     }
 
 }

@@ -45,11 +45,8 @@ dependencies {
     implementation"com.google.code.gson:gson:2.8.6"
     implementation'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    //Dependencias para bases de datos locales ROOM
-    implementation "androidx.room:room-rxjava2:2.4.1"
-    annotationProcessor("androidx.room:room-compiler:2.4.1")
 
-    implementation "androidx.room-runtime:2.3.0"
+    implementation "androidx.room:room-runtime:2.3.0"
     implementation "androidx.room:room-ktx:2.4.1"
     kapt "amdroidx.room:room-compiler:2.3.0"
 
